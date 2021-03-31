@@ -1,0 +1,45 @@
+<link href="https://fonts.googleapis.com/css2?family=Erica+One&family=Griffy&family=Hanalei&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stt.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<% for(var i =0;i < data.meals.length;i++){ %>
+<div  class="row">
+	<div class="col-md-6">
+<img  src= "<%= data.meals[0].strMealThumb %>" style="width:100%;height:100%" />
+</div>
+	<div class="col-md-6">
+<h1 style="color:#1FED17;font-family: 'Erica One', cursive;
+    font-family: 'Griffy', cursive;"> <%= data.meals[i].strMeal %></h1>
+<h3  style="color:purple;font-family: 'Erica One', cursive;
+    font-family: 'Griffy', cursive;"><%= data.meals[i].strCategory %></h3>
+<h1 style="color:orange;font-family: 'Erica One', cursive;
+    font-family: 'Griffy', cursive;">You Tube link</h1>
+<p style="font-family: 'Griffy', cursive;font-size:25px"><a href=" <%= data.meals[i].strYoutube %>">click here to get youtube vedio of the recipe</a></p>
+<h1 style= "color:gray;font-family: 'Erica One', cursive;
+    font-family: 'Griffy', cursive;">INGRIDIENTS</h1>
+<div style="color:brown;font-size:20px">
+<%= data.meals[i].strIngredient1 %>  <%= data.meals[i].strMeasure1 %><br>
+<%= data.meals[i].strIngredient2 %>  <%= data.meals[i].strMeasure2 %><br>
+<%= data.meals[i].strIngredient3 %>  <%= data.meals[i].strMeasure3 %><br>
+<%= data.meals[i].strIngredient4 %>  <%= data.meals[i].strMeasure4 %><br>
+<%= data.meals[i].strIngredient5 %>  <%= data.meals[i].strMeasure5 %><br>
+<%= data.meals[i].strIngredient6 %>  <%= data.meals[i].strMeasure6 %><br>
+<%= data.meals[i].strIngredient7 %>  <%= data.meals[i].strMeasure7 %><br>
+<%= data.meals[i].strIngredient8 %>  <%= data.meals[i].strMeasure8 %><br>
+<%= data.meals[i].strIngredient9 %>  <%= data.meals[i].strMeasure9 %><br>
+<%= data.meals[i].strIngredient10 %> <%= data.meals[i].strMeasure10 %><br>
+<%= data.meals[i].strIngredient11 %> <%= data.meals[i].strMeasure11 %><br>
+<%= data.meals[i].strIngredient12 %> <%= data.meals[i].strMeasure12 %><br>
+<%= data.meals[i].strIngredient13 %> <%= data.meals[i].strMeasure13 %><br>
+<%= data.meals[i].strIngredient14 %> <%= data.meals[i].strMeasure14 %><br>
+<%= data.meals[i].strIngredient15 %> <%= data.meals[i].strMeasure15 %><br>
+<%= data.meals[i].strIngredient16 %> <%= data.meals[i].strMeasure16 %><br>
+</div>
+</div>
+</div>
+<h1 style="color:green;font-family: 'Erica One', cursive;
+    font-family: 'Griffy', cursive;">INSTRUCTIONS</h1>
+<p style="color:purple;font-size:20px"><%=  data.meals[i].strInstructions.split("\r\n") %></p>
+<%}%>
+
+
+

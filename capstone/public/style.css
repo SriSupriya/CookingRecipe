@@ -1,0 +1,24 @@
+.blue {
+ 
+	width:100%;
+	height: 100%;
+	background-image: URL("images/fd6.jpg");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+
+}
+.mm{
+	font-size: 220px;
+    font-family: 'Erica One', cursive;
+    font-family: 'Griffy', cursive;
+    color: #fd7e14;
+    padding-top: 220px;
+    padding-left: 600;
+}
+.oo{
+	 font-family: 'Erica One', cursive;
+    font-family: 'Griffy', cursive;
+    font-size:35px;
+    padding-left: 620px;
+    margin-bottom:60px;
+}
